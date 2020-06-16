@@ -1,0 +1,24 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navbar styles */
+nav {
+    font-family: 'Ruda', sans-serif;
+    background-color: #fff;
+}
+.nav-link {
+    color: #086177;
+}
+.nav-item.active {
+    color: #5FBCD3;
+}
+
+/* banner styles */
+.banner-wrapper {
+    background-image: url('../assets/pix/home_girls.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
