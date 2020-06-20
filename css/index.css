@@ -1,6 +1,21 @@
+/* media queries */
+
+
 body {
   font-family: 'Roboto', sans-serif;
 }
+/* p { */
+/*   font-size: 2.3vmin; */
+/* } */
+/* h1 { */
+/*   font-size: 4.0vw; */
+/* } */
+/* h2 { */
+/*   font-size: 3.0vw; */
+/* } */
+/* button .btn{ */
+/*   font-size: 2.5vw !important; */
+/* } */
 
 /* navbar styles */
 nav {
@@ -20,8 +35,8 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center; */
-  background-position: center top;
-  height: 95vh;
+  background-position: center;
+  height: 100vh;
   display: flex;
 }
 
@@ -31,7 +46,7 @@ nav {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 100px;
+  /* padding: 100px; */
   align-items: center;
   justify-content: center;
 }
@@ -43,7 +58,6 @@ nav {
   border: 3px solid #eee;
   border-radius: 4px;
   color: #eee;
-  margin-left: 10px;
 }
 
 /* statistics section */
@@ -84,23 +98,17 @@ hr {
 
 /* Story section */
 .story-pic {
-  width: 60vw;
+  width: 100%;
   height: auto;
 }
 .story-wrapper {
   background-color: #5FBCD3;
   color: #FFFEFE;
 }
-.story-wrapper {
-  padding: 100px;
-}
 .learn-more-btn {
   background-color: #FFFFFF;
   color: #5FBCD3;
   border-radius: 5px;
-  padding-left: 40px;
-  padding-right: 40px;
-  font-size: 18px;
 }
 
 /* partners section */
@@ -109,7 +117,7 @@ hr {
 }
 
 .partner-logo {
-  width: 250px;
+  width: 100%;
   height: auto;
 }
 
@@ -131,7 +139,6 @@ hr {
 }
 .footer-link {
   color: #5FBCD3;
-  font-size: 1.2rem;
 }
 .social-icon {
   width: 30px;
