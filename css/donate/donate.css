@@ -1,0 +1,36 @@
+.donate-wrapper {
+  background-image: url('../../assets/pix/home/OurStoryBannerImg.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  min-height: 40vh;
+}
+
+.balika-blue {
+  color: #086177;
+}
+.bg-balika-lightblue {
+  background-color: #5FBCD3;
+}
+
+.donate-form-wrapper {
+  background-color: rgba(216, 215, 215, 0.28);
+}
+
+label {
+  color: #086177;
+  font-weight: bold;
+}
+.form-control {
+  border: 1px solid #5FBCD3;
+}
+.tax-btn {
+  color: #5FBCD3;
+  border: 1px solid #5FBCD3;
+  background-color: #fff;
+}
+.privacy-label {
+  font-weight: lighter;
+  color: #000;
+}

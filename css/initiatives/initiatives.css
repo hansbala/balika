@@ -1,0 +1,23 @@
+.initiatives-wrapper {
+  background-image: url('../../assets/pix/home/OurStoryBannerImg.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  min-height: 40vh;
+}
+
+.balika-blue {
+  color: #086177;
+}
+.font-grey {
+  color: #747171;
+}
+.font-lightgrey {
+  color: #747373;
+}
+.learn-more-btn {
+  color: #5FBCD3;
+  border: 1px solid #5FBCD3;
+  border-radius: 3px;
+}

@@ -1,0 +1,46 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* navbar styles */
+nav {
+  font-family: 'Ruda', sans-serif;
+  background-color: #fff;
+}
+.nav-link {
+  color: #086177;
+}
+.nav-item.active {
+  color: #5FBCD3;
+}
+
+
+/* banner section */
+.bg-balika-light-blue {
+  background-color: #EFFCFD;
+}
+.bg-balika-blue {
+  background-color: #5FBCD3;
+}
+.balika-blue {
+  color: #5FBCD3;
+}
+.balika-dark-blue {
+  color: #086177;
+}
+
+.banner-img {
+  max-height: 600px;
+}
+
+/* footer section */
+.footer {
+  font-family: 'Ruda', sans-serif;
+}
+.footer-link {
+  color: #5FBCD3;
+}
+.social-icon {
+  width: 30px;
+  height: auto;
+}

@@ -1,0 +1,45 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* navbar styles */
+nav {
+  font-family: 'Ruda', sans-serif;
+  background-color: #fff;
+}
+.nav-link {
+  color: #086177;
+}
+.nav-item.active {
+  color: #5FBCD3;
+}
+
+/* team banner */
+.team-wrapper {
+  background-image: url('../../assets/pix/our-team/banner.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  min-height: 40vh;
+}
+.balika-blue-text {
+  color: #086177;
+}
+.card {
+  border: 1px solid #AAA8A8;
+  border-radius: 7px;
+}
+
+/* footer section */
+.footer {
+  font-family: 'Ruda', sans-serif;
+  border-top: 1px solid #D9D9D9;
+}
+.footer-link {
+  color: #5FBCD3;
+}
+.social-icon {
+  width: 30px;
+  height: auto;
+}
