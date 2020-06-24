@@ -1,0 +1,52 @@
+
+/* navbar styles */
+nav {
+    font-family: 'Ruda', sans-serif;
+    background-color: #fff;
+  }
+  .nav-link {
+    color: #086177;
+  }
+  .nav-item.active {
+    color: #5FBCD3;
+  }
+
+/* Header Banner */
+  .hero-Img{
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+    background: url(../../assets/pix/banner_3.JPG) no-repeat center;
+    background-size: cover;
+}
+
+.header-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    color: white;  
+}
+
+
+/* Form container  */
+.form-container{
+    margin-top: 15vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    margin-bottom: 20vh;
+}
+
+
+/* footer section */
+.footer {
+    font-family: 'Ruda', sans-serif;
+  }
+  .footer-link {
+    color: #5FBCD3;
+  }
+  .social-icon {
+    width: 30px;
+    height: auto;
+  }
+  
