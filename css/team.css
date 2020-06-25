@@ -16,7 +16,7 @@ nav {
 
 /* team banner */
 .team-wrapper {
-  background-image: url('../../assets/pix/our-team/banner.JPG');
+  background-image: url('../assets/pix/our-team/banner.JPG');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

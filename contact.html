@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,87 +11,99 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/contact.css">
     <title>Balika - Contact</title>
-  </head>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_jbQiuWJctiCk7EwIuMLdQ");
+       })();
+    </script>
+  <script type="text/javascript">
+    window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        emailjs.sendForm('balika_gmail', 'contact_form', this);
+      });
+    }
+  </script>
+</head>
 <body>
   <!-- navbar section -->
   <div id="nav-placeholder"></div>
 
    <!-- banner image -->
-  <div class="hero-Img"> 
-    <div class="header-container">
-      <h1><span> Contact Us </span></h1>
-    </div>
+  <!-- <div class="hero-Img"> --> 
+  <!--   <div class="header-container"> -->
+  <!--     <h1><span> Contact Us </span></h1> -->
+  <!--   </div> -->
+  <!-- </div> -->
+  <div class="container-fluid contact-wrapper d-flex justify-content-center align-items-end">
+    <h1 class="text-center text-white mt-5 py-5">Our Team</h1>
   </div>
-  
 
-
-<!-- Contact Form -->
-<div class="container-fluid">
-  <div class="form-container">
-  <form>
-    <div class="row">
-      <div class="col">
-        <label for="inputAddress"> First Name</label>
-        <input type="text" class="form-control" placeholder="First name">
-      </div>
-      <div class="col">
-        <label for="inputAddress"> Last Name</label>
-        <input type="text" class="form-control" placeholder="Last name">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputAddress"> Email</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="balika@xyz.com">
-    </div>
-    <div class="form-group">
-      <label for="inputAddress"> Subject Line</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="Subject">
-    </div>
-
-    <div class="mb-3">
-      <label for="validationTextarea">Message</label>
-      <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-      <div class="invalid-feedback">
-        Please enter a message in the textarea.
-      </div>
-    </div>
-
-    <button class="btn btn-primary" type="submit">Submit form</button>
-
-
-  </form>
-  </div>
-</div>
-
-
-    <!-- footer section -->
-    <footer>
-      <div class="footer container-fluid d-flex flex-row justify-content-between align-items-center py-4">
-        <div class="d-flex flex-md-row flex-sm-column justify-content-around align-items-center flex-fill">
-          <a class="footer-link mx-auto" href="#">Careers</a>
-          <a class="footer-link mx-auto" href="#">Contact Us</a>
-          <a class="footer-link mx-auto" href="#">FAQs</a>
-          <a class="footer-link mx-auto" href="#">Privacy Policy</a>
+  <!-- Contact Form -->
+  <div class="container-fluid">
+    <div class="form-container">
+    <form id="contact-form">
+      <div class="row">
+        <div class="col">
+          <label for="inputAddress"> First Name</label>
+          <input type="text" class="form-control" placeholder="First name" id="first_name" name="first_name">
         </div>
-        <div class="social-icons-wrapper d-flex-flex-row justify-content-around align-items-center">
-          <a class="social-icon-link" href="#">
-            <img class="social-icon" src="../../assets/icons/SM-Facebook.png" alt="facebook icon">
-          </a>
-          <a class="social-icon-link" href="#">
-            <img class="social-icon" src="../../assets/icons/SM-Instagram.png" alt="instagram icon">
-          </a>
-          <a class="social-icon-link" href="#">
-            <img class="social-icon" src="../../assets/icons/SM-twitter.png" alt="twitter icon">
-          </a>
-          <a class="social-icon-link" href="#">
-            <img class="social-icon" src="../../assets/icons/SM-Youtube.png" alt="youtube icon">
-          </a>
+        <div class="col">
+          <label for="inputAddress"> Last Name</label>
+          <input type="text" class="form-control" placeholder="Last name" id="last_name" name="last_name">
         </div>
       </div>
-    </footer>
-  
+      <div class="form-group">
+        <label for="inputAddress"> Email</label>
+        <input type="text" class="form-control" id="user_email" placeholder="balika@xyz.com" name="user_email"/>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress"> Subject Line</label>
+        <input type="text" class="form-control" id="subject_name" placeholder="Subject" name="subject_name">
+      </div>
+
+      <div class="mb-3">
+        <label for="validationTextarea">Message</label>
+        <textarea class="form-control is-invalid" id="user_message" name="user_message" placeholder="Required example textarea" required></textarea>
+        <div class="invalid-feedback">
+          Please enter a message in the textarea.
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Submit form</button>
 
 
+    </form>
+    </div>
+  </div>
+
+
+  <!-- footer section -->
+  <footer>
+    <div class="footer container-fluid d-flex flex-row justify-content-between align-items-center py-4">
+      <div class="d-flex flex-md-row flex-sm-column justify-content-around align-items-center flex-fill">
+        <a class="footer-link mx-auto" href="#">Careers</a>
+        <a class="footer-link mx-auto" href="#">Contact Us</a>
+        <a class="footer-link mx-auto" href="#">FAQs</a>
+        <a class="footer-link mx-auto" href="#">Privacy Policy</a>
+      </div>
+      <div class="social-icons-wrapper d-flex-flex-row justify-content-around align-items-center">
+        <a class="social-icon-link" href="#">
+          <img class="social-icon" src="../../assets/icons/SM-Facebook.png" alt="facebook icon">
+        </a>
+        <a class="social-icon-link" href="#">
+          <img class="social-icon" src="../../assets/icons/SM-Instagram.png" alt="instagram icon">
+        </a>
+        <a class="social-icon-link" href="#">
+          <img class="social-icon" src="../../assets/icons/SM-twitter.png" alt="twitter icon">
+        </a>
+        <a class="social-icon-link" href="#">
+          <img class="social-icon" src="../../assets/icons/SM-Youtube.png" alt="youtube icon">
+        </a>
+      </div>
+    </div>
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -103,5 +115,5 @@
         $('#nav-placeholder').load('snippets/navbar.html');
       });
   </script>
-  </body>
+</body>
 </html>

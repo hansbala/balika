@@ -1,25 +1,35 @@
-
+body {
+  background-color: red;
+}
 /* navbar styles */
 nav {
-    font-family: 'Ruda', sans-serif;
-    background-color: #fff;
-  }
-  .nav-link {
-    color: #086177;
-  }
-  .nav-item.active {
-    color: #5FBCD3;
-  }
-
-/* Header Banner */
-  .hero-Img{
-    position: relative;
-    height: 50vh;
-    overflow: hidden;
-    background: url(../../assets/pix/banner_3.JPG) no-repeat center;
-    background-size: cover;
+  font-family: 'Ruda', sans-serif;
+  background-color: #fff;
+}
+.nav-link {
+  color: #086177;
+}
+.nav-item.active {
+  color: #5FBCD3;
 }
 
+/* Header Banner */
+  /* .hero-Img{ */
+  /*   position: relative; */
+  /*   height: 50vh; */
+  /*   overflow: hidden; */
+  /*   background: url(../../assets/pix/banner_3.JPG) no-repeat center; */
+  /*   background-size: cover; */
+/* } */
+
+.contact-wrapper {
+  background-image: url('../assets/pix/our-team/banner.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  min-height: 40vh;
+}
 .header-container{
     position: absolute;
     top: 50%;
