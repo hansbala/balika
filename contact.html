@@ -7,75 +7,98 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400,500&family=Ruda:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/contact.css">
-    <title>Balika - Contact</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript">
-       (function(){
-          emailjs.init("user_jbQiuWJctiCk7EwIuMLdQ");
-       })();
+      window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          emailjs.sendForm('balika_gmail', 'contact_form', this);
+        });
+      }
     </script>
-  <script type="text/javascript">
-    window.onload = function() {
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        emailjs.sendForm('balika_gmail', 'contact_form', this);
-      });
-    }
-  </script>
 </head>
 <body>
   <!-- navbar section -->
   <div id="nav-placeholder"></div>
 
    <!-- banner image -->
-  <!-- <div class="hero-Img"> --> 
-  <!--   <div class="header-container"> -->
-  <!--     <h1><span> Contact Us </span></h1> -->
-  <!--   </div> -->
-  <!-- </div> -->
   <div class="container-fluid contact-wrapper d-flex justify-content-center align-items-end">
-    <h1 class="text-center text-white mt-5 py-5">Our Team</h1>
+    <h1 class="text-center text-white mt-5 py-5">Contact Us</h1>
   </div>
 
   <!-- Contact Form -->
-  <div class="container-fluid">
-    <div class="form-container">
+  <!-- <div class="container-fluid contact-form-wrapper"> -->
+  <!--   <div class="form-container"> -->
+  <!--   <form id="contact-form"> -->
+  <!--     <div class="row"> -->
+  <!--       <div class="col"> -->
+  <!--         <label for="inputAddress"> First Name</label> -->
+  <!--         <input type="text" class="form-control" placeholder="First name" id="first_name" name="first_name"> -->
+  <!--       </div> -->
+  <!--       <div class="col"> -->
+  <!--         <label for="inputAddress"> Last Name</label> -->
+  <!--         <input type="text" class="form-control" placeholder="Last name" id="last_name" name="last_name"> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--     <div class="form-group"> -->
+  <!--       <label for="inputAddress"> Email</label> -->
+  <!--       <input type="text" class="form-control" id="user_email" placeholder="balika@xyz.com" name="user_email"/> -->
+  <!--     </div> -->
+  <!--     <div class="form-group"> -->
+  <!--       <label for="inputAddress"> Subject Line</label> -->
+  <!--       <input type="text" class="form-control" id="subject_name" placeholder="Subject" name="subject_name"> -->
+  <!--     </div> -->
+
+  <!--     <div class="mb-3"> -->
+  <!--       <label for="validationTextarea">Message</label> -->
+  <!--       <textarea class="form-control is-invalid" id="user_message" name="user_message" placeholder="Required example textarea" required></textarea> -->
+  <!--       <div class="invalid-feedback"> -->
+  <!--         Please enter a message in the textarea. -->
+  <!--       </div> -->
+  <!--     </div> -->
+
+  <!--     <button class="btn btn-primary" type="submit">Submit form</button> -->
+
+
+  <!--   </form> -->
+  <!--   </div> -->
+  <!-- </div> -->
+
+  <div class="container contact-form-wrapper my-5 p-5">
     <form id="contact-form">
-      <div class="row">
-        <div class="col">
-          <label for="inputAddress"> First Name</label>
-          <input type="text" class="form-control" placeholder="First name" id="first_name" name="first_name">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputFirstName">First Name</label>
+          <input type="text" class="form-control" id="inputFirstName" placeholder="First" name="first_name">
         </div>
-        <div class="col">
-          <label for="inputAddress"> Last Name</label>
-          <input type="text" class="form-control" placeholder="Last name" id="last_name" name="last_name">
+        <div class="form-group col-md-6">
+          <label for="inputLastName">Last Name</label>
+          <input type="text" class="form-control" id="inputLastName" placeholder="Last" name="last_name">
         </div>
       </div>
       <div class="form-group">
-        <label for="inputAddress"> Email</label>
-        <input type="text" class="form-control" id="user_email" placeholder="balika@xyz.com" name="user_email"/>
+        <label for="inputEmail">Email</label>
+        <input type="text" class="form-control" id="inputEmail" placeholder="xyz@gmail.com" name="user_email">
       </div>
       <div class="form-group">
-        <label for="inputAddress"> Subject Line</label>
-        <input type="text" class="form-control" id="subject_name" placeholder="Subject" name="subject_name">
+        <label for="inputNumber">Phone Number</label>
+        <input type="number" class="form-control" id="inputNumber" placeholder="+91 9831053479" name="user_phone">
       </div>
-
-      <div class="mb-3">
-        <label for="validationTextarea">Message</label>
-        <textarea class="form-control is-invalid" id="user_message" name="user_message" placeholder="Required example textarea" required></textarea>
-        <div class="invalid-feedback">
-          Please enter a message in the textarea.
-        </div>
+      <div class="form-group">
+        <label for="inputAddress">Subject</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Subject Line" name="subject_name">
       </div>
-
-      <button class="btn btn-primary" type="submit">Submit form</button>
-
-
+      <div class="form-group">
+        <label for="messageTextInp">Message</label>
+        <textarea id="messageTextInp" class="form-control" name="user_message" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+      </div>
+      <div class="container text-center">
+        <button type="submit" class="btn btn-primary text-white px-5 py-3" >Submit</button>
+      </div>
     </form>
-    </div>
   </div>
 
 

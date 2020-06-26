@@ -1,6 +1,3 @@
-body {
-  background-color: red;
-}
 /* navbar styles */
 nav {
   font-family: 'Ruda', sans-serif;
@@ -13,15 +10,6 @@ nav {
   color: #5FBCD3;
 }
 
-/* Header Banner */
-  /* .hero-Img{ */
-  /*   position: relative; */
-  /*   height: 50vh; */
-  /*   overflow: hidden; */
-  /*   background: url(../../assets/pix/banner_3.JPG) no-repeat center; */
-  /*   background-size: cover; */
-/* } */
-
 .contact-wrapper {
   background-image: url('../assets/pix/our-team/banner.JPG');
   background-repeat: no-repeat;
@@ -30,33 +18,26 @@ nav {
   width: 100vw;
   min-height: 40vh;
 }
-.header-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    overflow: hidden;
-    color: white;  
+
+.contact-form-wrapper {
+  background-color: rgba(216, 215, 215, 0.28);
 }
-
-
-/* Form container  */
-.form-container{
-    margin-top: 15vh;
-    margin-left: 30vh;
-    margin-right: 30vh;
-    margin-bottom: 20vh;
+.bg-balika-lightblue {
+  background-color: #5FBCD3;
 }
-
+label {
+  color: #086177;
+  font-weight: bold;
+}
 
 /* footer section */
 .footer {
-    font-family: 'Ruda', sans-serif;
-  }
-  .footer-link {
-    color: #5FBCD3;
-  }
-  .social-icon {
-    width: 30px;
-    height: auto;
-  }
-  
+  font-family: 'Ruda', sans-serif;
+}
+.footer-link {
+  color: #5FBCD3;
+}
+.social-icon {
+  width: 30px;
+  height: auto;
+}
