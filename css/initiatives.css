@@ -1,3 +1,15 @@
+/* navbar styles */
+nav {
+  font-family: 'Ruda', sans-serif;
+  background-color: #fff;
+}
+.nav-link {
+  color: #086177;
+}
+.nav-item.active {
+  color: #5FBCD3;
+}
+
 .initiatives-wrapper {
   background-image: url('../../assets/pix/home/OurStoryBannerImg.JPG');
   background-repeat: no-repeat;
@@ -5,7 +17,6 @@
   background-position: center;
   width: 100vw;
   min-height: 40vh;
-  max-height: 40vh;
 }
 
 .balika-blue {
@@ -23,20 +34,20 @@
   border-radius: 3px;
 }
 
-.hero-Img{
-  position: relative;
-  height: 50vh;
-  overflow: hidden;
-  background: url(../../assets/pix/banner_3.JPG) no-repeat center;
-  background-size: cover;
-}
-.header-container{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  overflow: hidden;
-  color: white;  
-}
+/* .hero-Img{ */
+/*   position: relative; */
+/*   height: 50vh; */
+/*   overflow: hidden; */
+/*   background: url(../../assets/pix/banner_3.JPG) no-repeat center; */
+/*   background-size: cover; */
+/* } */
+/* .header-container{ */
+/*   position: absolute; */
+/*   top: 50%; */
+/*   left: 50%; */
+/*   overflow: hidden; */
+/*   color: white; */  
+/* } */
 
 .space{
   height: 10vh;
