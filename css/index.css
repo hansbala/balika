@@ -29,6 +29,10 @@ nav {
   color: #5FBCD3;
 }
 
+#demo {
+  min-height: 1000px;
+}
+
 /* banner styles */
 .banner-wrapper {
   background-image: url('../assets/pix/home-1.jpg');
