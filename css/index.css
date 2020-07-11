@@ -35,7 +35,7 @@ nav {
 
 /* banner styles */
 .banner-wrapper {
-  background-image: url('../assets/pix/home-1.jpg');
+  background-image: url('../assets/pix/IMG_6146.JPG');
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center; */
@@ -194,7 +194,16 @@ hr {
   background-color: #086177;
 }
 .subscribe-btn {
-  border: 2px solid #eee;
+  border: 2px solid #5FBCD3;
+}
+.bg-balika-lightblue {
+  background-color: #5FBCD3;
+}
+.text-balika-lightblue {
+  color: #5FBCD3;
+}
+.balika-blue {
+  color: #086177;
 }
 
 /* footer section */

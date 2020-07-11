@@ -1,3 +1,9 @@
+@media only screen and (max-width: 600px) {
+  img.card-img {
+    min-height: 0px;
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -29,6 +35,9 @@ nav {
 .card {
   border: 1px solid #AAA8A8;
   border-radius: 7px;
+}
+.card-img {
+  min-height: 700px;
 }
 
 /* footer section */
