@@ -1,0 +1,50 @@
+/* navbar styles */
+nav {
+    font-family: 'Ruda', sans-serif;
+    background-color: #fff;
+}
+.nav-link {
+    color: #086177;
+}
+.nav-item.active {
+    color: #5FBCD3;
+}
+
+.media-wrapper {
+    background-image: url('../../assets/Logos/partners.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    min-height: 60vh;
+}
+.font-grey {
+    color: #413E3E;
+}
+.space {
+    height: 8vh;
+}
+.partner-img {
+    width: 200px;
+    height: auto;
+}
+.card {
+    background-color: #f7f7f7;
+}
+.news-img {
+    width: 200px;
+    height: auto;
+}
+
+/* footer section */
+.footer {
+    font-family: 'Ruda', sans-serif;
+}
+.footer-link {
+    color: #5FBCD3;
+}
+.social-icon {
+    width: 30px;
+    height: auto;
+}
+

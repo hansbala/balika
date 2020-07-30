@@ -1,117 +1,144 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400,500&family=Ruda:wght@500&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/donate.css">
-    <title>Balika - Donate</title>
-  </head>
-  <body>
-    <!-- navbar section -->
-    <div id="nav-placeholder"></div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- banner image -->
-    <!-- <div class="hero-Img"> --> 
-    <!--   <div class="header-container"> -->
-    <!--     <h1><span> Donate </span></h1> -->
-    <!--   </div> -->
-    <!-- </div> -->
-
-    <div class="container-fluid donate-wrapper d-flex justify-content-center align-items-end">
-      <h1 class="text-center text-white mt-5 py-5">Sponsor a Balika</h1>
-    </div>
-
-    <!-- donate form -->
-    <div class="container donate-form-wrapper my-5 p-5">
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputFirstName" class="balika-blue">First Name</label>
-            <input type="text" class="form-control" id="inputFirstName" placeholder="John">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputLastName" class="balika-blue">Last Name</label>
-            <input type="text" class="form-control" id="inputLastName" placeholder="Doe">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputAmount">Amount</label>
-          <input type="text" class="form-control" id="inputAmount" placeholder="$24,000">
-        </div>
-        <div class="form-group">
-          <label for="inputEmail">Email</label>
-          <input type="text" class="form-control" id="inputEmail" placeholder="sample@balika.com">
-        </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Malwani, Mumbai">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCountry">Country</label>
-            <input type="text" class="form-control" id="inputCountry">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputState">State</label>
-            <input type="text" class="form-control" id="inputState">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPostal">Postal Code</label>
-            <input type="number" class="form-control" id="inputPostal">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputPhoneNumber">Phone Number</label>
-          <input type="text" class="form-control" id="inputPhoneNumber">
-        </div>
-        <label for="">Do you require 80G (tax exemption)</label>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label class="d-none" for="inputBtn80GYes"></label>
-            <input class="btn tax-btn w-100" type="button" value="Yes">
-          </div>
-          <div class="form-group col-md-6">
-            <label class="d-none" for="inputBtn80GNo"></label>
-            <input class="btn tax-btn w-100" type="button" value="No">
-          </div>
-        </div>
-        <div class="form-group my-3">
-          <div class="container w-100">
-            <div class="form-check text-center">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label privacy-label" for="gridCheck">
-                I have read through the website's privacy policy and agree to make a donation*
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="container text-center">
-          <button type="submit" class="btn bg-balika-lightblue text-white px-5 py-3">Make Donation</button>
-        </div>
-      </form>
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  <script>
-      $(function() {
-        $('#nav-placeholder').load('snippets/navbar.html');
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400,500&family=Ruda:wght@500&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/donate.css">
+  <title>Balika - Donate</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_jbQiuWJctiCk7EwIuMLdQ");
+    })();
+    window.onload = function () {
+      document.getElementById('donate-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        emailjs.sendForm('balika_gmail', 'donate_form', this);
       });
+    }
   </script>
-  </body>
+</head>
+
+<body>
+  <!-- navbar section -->
+  <div id="nav-placeholder"></div>
+
+  <!-- banner image -->
+  <!-- <div class="hero-Img"> -->
+  <!--   <div class="header-container"> -->
+  <!--     <h1><span> Donate </span></h1> -->
+  <!--   </div> -->
+  <!-- </div> -->
+
+  <div class="container-fluid donate-wrapper d-flex justify-content-center align-items-end">
+    <h1 class="text-center text-white mt-5 py-5">Sponsor a Balika</h1>
+  </div>
+
+  <!-- donate form -->
+  <div class="container donate-form-wrapper my-5 p-5">
+    <form id="donate-form">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputFirstName" class="balika-blue">First Name</label>
+          <input type="text" class="form-control" id="inputFirstName" name="first_name" placeholder="John">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputLastName" class="balika-blue">Last Name</label>
+          <input type="text" class="form-control" id="inputLastName" name="last_name" placeholder="Doe">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAmount">Amount</label>
+        <input type="text" class="form-control" id="inputAmount" name="donation_amount" placeholder="$24,000">
+      </div>
+      <div class="form-group">
+        <label for="inputEmail">Email</label>
+        <input type="text" class="form-control" id="inputEmail" name="user_email" placeholder="sample@balika.com">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" id="inputAddress" name="user_address" placeholder="Malwani, Mumbai">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCountry">Country</label>
+          <input type="text" class="form-control" name="user_country" id="inputCountry">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputState">State</label>
+          <input type="text" class="form-control" name="user_state" id="inputState">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" class="form-control" name="user_city" id="inputCity">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPostal">Postal Code</label>
+          <input type="number" class="form-control" name="user_postal_code" id="inputPostal">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPhoneNumber">Phone Number</label>
+        <input type="text" class="form-control" name="user_phone_number" id="inputPhoneNumber">
+      </div>
+      <label for="">Do you require 80G (tax exemption)</label>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label class="d-none" for="inputBtn80GYes"></label>
+          <input name="user_80g_exemption_bool" class="btn tax-btn w-100" type="button" value="Yes">
+        </div>
+        <div class="form-group col-md-6">
+          <label class="d-none" for="inputBtn80GNo"></label>
+          <input name="user_80g_exemption_bool" class="btn tax-btn w-100" type="button" value="No">
+        </div>
+      </div>
+      <div class="form-group my-3">
+        <div class="container w-100">
+          <div class="form-check text-center">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label privacy-label" for="gridCheck">
+              I have read through the website's privacy policy and agree to make a donation*
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center">
+        <button type="submit" class="btn bg-balika-lightblue text-white px-5 py-3">Make Donation</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- footer section -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('#nav-placeholder').load('snippets/navbar.html');
+    });
+    $(function () {
+      $('#footer-placeholder').load('snippets/footer.html');
+    });
+  </script>
+</body>
+
 </html>

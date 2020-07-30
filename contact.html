@@ -1,72 +1,43 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400,500&family=Ruda:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/contact.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
-      window.onload = function() {
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-          event.preventDefault();
-          emailjs.sendForm('balika_gmail', 'contact_form', this);
-        });
-      }
-    </script>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400,500&family=Ruda:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/contact.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Balika - Contact</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_jbQiuWJctiCk7EwIuMLdQ");
+    })();
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        emailjs.sendForm('balika_gmail', 'contact_form', this);
+      });
+    }
+  </script>
 </head>
+
 <body>
   <!-- navbar section -->
   <div id="nav-placeholder"></div>
 
-   <!-- banner image -->
+  <!-- banner image -->
   <div class="container-fluid contact-wrapper d-flex justify-content-center align-items-end">
     <h1 class="text-center text-white mt-5 py-5">Contact Us</h1>
   </div>
 
   <!-- Contact Form -->
-  <!-- <div class="container-fluid contact-form-wrapper"> -->
-  <!--   <div class="form-container"> -->
-  <!--   <form id="contact-form"> -->
-  <!--     <div class="row"> -->
-  <!--       <div class="col"> -->
-  <!--         <label for="inputAddress"> First Name</label> -->
-  <!--         <input type="text" class="form-control" placeholder="First name" id="first_name" name="first_name"> -->
-  <!--       </div> -->
-  <!--       <div class="col"> -->
-  <!--         <label for="inputAddress"> Last Name</label> -->
-  <!--         <input type="text" class="form-control" placeholder="Last name" id="last_name" name="last_name"> -->
-  <!--       </div> -->
-  <!--     </div> -->
-  <!--     <div class="form-group"> -->
-  <!--       <label for="inputAddress"> Email</label> -->
-  <!--       <input type="text" class="form-control" id="user_email" placeholder="balika@xyz.com" name="user_email"/> -->
-  <!--     </div> -->
-  <!--     <div class="form-group"> -->
-  <!--       <label for="inputAddress"> Subject Line</label> -->
-  <!--       <input type="text" class="form-control" id="subject_name" placeholder="Subject" name="subject_name"> -->
-  <!--     </div> -->
-
-  <!--     <div class="mb-3"> -->
-  <!--       <label for="validationTextarea">Message</label> -->
-  <!--       <textarea class="form-control is-invalid" id="user_message" name="user_message" placeholder="Required example textarea" required></textarea> -->
-  <!--       <div class="invalid-feedback"> -->
-  <!--         Please enter a message in the textarea. -->
-  <!--       </div> -->
-  <!--     </div> -->
-
-  <!--     <button class="btn btn-primary" type="submit">Submit form</button> -->
-
-
-  <!--   </form> -->
-  <!--   </div> -->
-  <!-- </div> -->
-
   <div class="container contact-form-wrapper my-5 p-5">
     <form id="contact-form">
       <div class="form-row">
@@ -93,50 +64,36 @@
       </div>
       <div class="form-group">
         <label for="messageTextInp">Message</label>
-        <textarea id="messageTextInp" class="form-control" name="user_message" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+        <textarea id="messageTextInp" class="form-control" name="user_message" cols="30" rows="10"
+          placeholder="What's on your mind?"></textarea>
       </div>
       <div class="container text-center">
-        <button type="submit" class="btn btn-primary text-white px-5 py-3" >Submit</button>
+        <button type="submit" class="btn btn-primary text-white px-5 py-3">Submit</button>
       </div>
     </form>
   </div>
 
 
   <!-- footer section -->
-  <footer>
-    <div class="footer container-fluid d-flex flex-row justify-content-between align-items-center py-4">
-      <div class="d-flex flex-md-row flex-sm-column justify-content-around align-items-center flex-fill">
-        <a class="footer-link mx-auto" href="#">Careers</a>
-        <a class="footer-link mx-auto" href="#">Contact Us</a>
-        <a class="footer-link mx-auto" href="#">FAQs</a>
-        <a class="footer-link mx-auto" href="#">Privacy Policy</a>
-      </div>
-      <div class="social-icons-wrapper d-flex-flex-row justify-content-around align-items-center">
-        <a class="social-icon-link" href="#">
-          <img class="social-icon" src="../../assets/icons/SM-Facebook.png" alt="facebook icon">
-        </a>
-        <a class="social-icon-link" href="#">
-          <img class="social-icon" src="../../assets/icons/SM-Instagram.png" alt="instagram icon">
-        </a>
-        <a class="social-icon-link" href="#">
-          <img class="social-icon" src="../../assets/icons/SM-twitter.png" alt="twitter icon">
-        </a>
-        <a class="social-icon-link" href="#">
-          <img class="social-icon" src="../../assets/icons/SM-Youtube.png" alt="youtube icon">
-        </a>
-      </div>
-    </div>
-  </footer>
+  <div id="footer-placeholder"></div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
   <script>
-      $(function() {
-        $('#nav-placeholder').load('snippets/navbar.html');
-      });
+    $(function () {
+      $('#nav-placeholder').load('snippets/navbar.html');
+    });
+    $(function () {
+      $('#footer-placeholder').load('snippets/footer.html');
+    });
   </script>
 </body>
+
 </html>

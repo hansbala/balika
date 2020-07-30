@@ -37,7 +37,9 @@ nav {
   border-radius: 7px;
 }
 .card-img {
-  min-height: 700px;
+  /* /* min-height: 700px; */
+  min-width: 350px;
+  height: auto;
 }
 
 /* footer section */

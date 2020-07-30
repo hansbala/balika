@@ -29,10 +29,9 @@ nav {
   color: #5FBCD3;
 }
 
-#demo {
-  min-height: 1000px;
+.balika-writeup {
+  font-size: 1.4em;
 }
-
 /* banner styles */
 .banner-wrapper {
   background-image: url('../assets/pix/IMG_6146.JPG');

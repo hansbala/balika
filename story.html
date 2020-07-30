@@ -76,9 +76,6 @@
   <div class="row no-gutters">
     <div class="col-md-6 col-sm-12">
       <div class="embed-responsive embed-responsive-16by9">
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/l9ebDS0okCk" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe> -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/BHOfo1w7bIo" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
@@ -150,31 +147,7 @@
 
 
   <!-- footer section -->
-  <div class="footer container-fluid d-flex flex-row justify-content-between align-items-center py-4">
-    <div class="d-flex flex-md-row flex-sm-column justify-content-around align-items-center flex-fill">
-      <a class="footer-link mx-auto" href="#">Careers</a>
-      <a class="footer-link mx-auto" href="#">Contact Us</a>
-      <a class="footer-link mx-auto" href="#">FAQs</a>
-      <a class="footer-link mx-auto" href="#">Privacy Policy</a>
-    </div>
-    <div class="social-icons-wrapper d-flex-flex-row justify-content-around align-items-center">
-      <a class="social-icon-link" href="#">
-        <img class="social-icon" src="../../assets/icons/SM-Facebook.png" alt="facebook icon">
-      </a>
-      <a class="social-icon-link" href="#">
-        <img class="social-icon" src="../../assets/icons/SM-Instagram.png" alt="instagram icon">
-      </a>
-      <a class="social-icon-link" href="#">
-        <img class="social-icon" src="../../assets/icons/SM-twitter.png" alt="twitter icon">
-      </a>
-      <a class="social-icon-link" href="#">
-        <img class="social-icon" src="../../assets/icons/SM-Youtube.png" alt="youtube icon">
-      </a>
-    </div>
-  </div>
-
-
-
+  <div id="footer-placeholder"></div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -188,6 +161,9 @@
   <script>
     $(function () {
       $('#nav-placeholder').load('snippets/navbar.html');
+    });
+    $(function () {
+      $('#footer-placeholder').load('snippets/footer.html');
     });
   </script>
 </body>
