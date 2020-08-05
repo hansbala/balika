@@ -30,7 +30,13 @@ nav {
 }
 
 .banner-img {
-  max-height: 600px;
+  /* max-height: 300px; */
+  width: 100%;
+}
+
+/* writeup section */
+.values-writeup {
+  /* min-height: 500px; */
 }
 
 /* footer section */

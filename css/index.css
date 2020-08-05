@@ -62,6 +62,9 @@ nav {
   border-radius: 4px;
   color: #eee;
 }
+.mentor-btn:hover {
+  color: yellow;
+}
 
 /* statistics section */
 .stats-section {
