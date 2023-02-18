@@ -1,6 +1,8 @@
 # Balika 
 
-[projectbalika.com](http://projectbalika.com)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/be4aa708-532a-4be5-9bff-746d262e2d97/deploy-status)](https://app.netlify.com/sites/silly-moonbeam-dd0d49/deploys)
+
+[projectbalika.com](http://projectbalika.org)
 
 This is the repository holding all source code for the website of Balika NGO.
 
